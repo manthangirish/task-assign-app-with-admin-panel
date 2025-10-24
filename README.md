@@ -37,6 +37,7 @@ cd <repo-folder>
 ```bash
 npm install express mongoose cors dotenv bcryptjs jsonwebtoken multer xlsx
 npm install react react-dom react-router-dom tailwindcss lucide-react
+npm i
 ```
 
 ### 3. Configure Environment Variables
@@ -61,10 +62,14 @@ mongod
 node scripts/createAdmin.js
 ```
 
-### 6. Run the Application (Frontend & Backend Together)
+### 6. Run the Application (Frontend & Backend, Run both commands in different terminal )
 
 ```bash
-npm run dev    # This runs both backend (server) and frontend (React)
+npm run dev    # This runs frontend (React)
+nodemon server.js
+```
+```bash
+nodemon server.js # This runs backend (server)
 ```
 
 * Backend API will run on **[http://localhost:5000](http://localhost:5000)**
